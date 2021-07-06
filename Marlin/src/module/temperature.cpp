@@ -2300,7 +2300,7 @@ void Temperature::init() {
 
   TERN_(HAS_MAXTC_SW_SPI, max_tc_spi.init());
 
-  HAL_adc_init();
+  HAL_adc_init(); // temp ADC
 
   #if HAS_TEMP_ADC_0
     HAL_ANALOG_SELECT(TEMP_0_PIN);
@@ -2369,7 +2369,7 @@ void Temperature::init() {
     HAL_ANALOG_SELECT(POWER_MONITOR_VOLTAGE_PIN);
   #endif
 
-  HAL_timer_start(TEMP_TIMER_NUM, TEMP_TIMER_FREQUENCY);
+  HAL_timer_start(TEMP_TIMER_NUM, TEMP_TIMER_FREQUENCY); // ADC sampling timer
   ENABLE_TEMPERATURE_INTERRUPT();
 
   #if HAS_AUTO_FAN_0
