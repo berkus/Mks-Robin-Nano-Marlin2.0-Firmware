@@ -176,12 +176,12 @@ void GcodeSuite::D(const int16_t dcode) {
     } break;
 
     case 6: // D6 Check delay loop accuracy
-      dump_delay_accuracy_check();
+      //dump_delay_accuracy_check();
       break;
 
     case 7: // D7 dump the current serial port type (hence configuration)
       SERIAL_ECHOLNPGM("Current serial configuration RX_BS:", RX_BUFFER_SIZE, ", TX_BS:", TX_BUFFER_SIZE);
-      SERIAL_ECHOLN(gtn(&SERIAL_IMPL));
+      // SERIAL_ECHOLN(gtn(&SERIAL_IMPL));
       break;
 
     case 100: { // D100 Disable heaters and attempt a hard hang (Watchdog Test)
