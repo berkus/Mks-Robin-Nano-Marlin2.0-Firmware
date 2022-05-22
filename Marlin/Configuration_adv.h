@@ -498,7 +498,7 @@
  * The fan turns on automatically whenever any driver is enabled and turns
  * off (or reduces to idle speed) shortly after drivers are turned off.
  */
-// #define USE_CONTROLLER_FAN
+// #define USE_CONTROLLER_FAN fixme enable this?
 #if ENABLED(USE_CONTROLLER_FAN)
   #define CONTROLLER_FAN_PIN FAN1_PIN           // Set a custom pin for the controller fan
   //#define CONTROLLER_FAN_USE_Z_ONLY       // With this option only the Z axis is considered
@@ -594,7 +594,7 @@
 #define E5_AUTO_FAN_PIN -1
 #define E6_AUTO_FAN_PIN -1
 #define E7_AUTO_FAN_PIN -1
-#define CHAMBER_AUTO_FAN_PIN FAN_PIN
+#define CHAMBER_AUTO_FAN_PIN FAN_PIN // fixme? no chamber here..
 #define COOLER_AUTO_FAN_PIN -1
 #define COOLER_FAN_PIN -1
 
@@ -873,7 +873,7 @@
 
 /**
  * Z Steppers Auto-Alignment
- * Add the G34 command to align multiple Z steppers using a bed probe.
+ * Add the G34 command to align multiple Z steppers using a bed probe. (fixme might be useful?)
  */
 //#define Z_STEPPER_AUTO_ALIGN
 #if ENABLED(Z_STEPPER_AUTO_ALIGN)
@@ -4046,7 +4046,7 @@
 /**
  * WiFi Support (Espressif ESP32 WiFi)
  */
-//#define WIFISUPPORT         // Marlin embedded WiFi managenent
+//#define WIFISUPPORT         // Marlin embedded WiFi managenent -- fixme enable?
 //#define ESP3D_WIFISUPPORT   // ESP3D Library WiFi management (https://github.com/luc-github/ESP3DLib)
 
 #if EITHER(WIFISUPPORT, ESP3D_WIFISUPPORT)
