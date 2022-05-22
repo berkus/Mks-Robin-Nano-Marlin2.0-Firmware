@@ -42,6 +42,11 @@
 // #define E0_DIAG_PIN                         PC4  // Z+ endstop
 // #define E1_DIAG_PIN                         PE7  // E1- endstop
 
+#define Z2_ENABLE_PIN E1_ENABLE_PIN
+#define Z2_STEP_PIN   E1_STEP_PIN
+#define Z2_DIR_PIN    E1_DIR_PIN
+
+
 //
 // Software SPI pins for TMC2130 stepper drivers
 // This board only supports SW SPI for stepper drivers
