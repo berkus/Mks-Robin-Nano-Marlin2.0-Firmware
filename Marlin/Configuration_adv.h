@@ -594,7 +594,7 @@
 #define E5_AUTO_FAN_PIN -1
 #define E6_AUTO_FAN_PIN -1
 #define E7_AUTO_FAN_PIN -1
-#define CHAMBER_AUTO_FAN_PIN -1
+#define CHAMBER_AUTO_FAN_PIN FAN_PIN
 #define COOLER_AUTO_FAN_PIN -1
 #define COOLER_FAN_PIN -1
 
