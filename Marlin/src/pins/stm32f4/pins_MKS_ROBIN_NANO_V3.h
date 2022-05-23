@@ -39,13 +39,14 @@
 // Same as in default config!
 // #define Y_DIAG_PIN                          PD2  // Y- endstop
 // #define Z_DIAG_PIN                          PC8  // Z- endstop
-// #define E0_DIAG_PIN                         PC4  // Z+ endstop
+// #define E0_DIAG_PIN                         PC4  // Z+ endstop -- no endstop - this is extruder
 // #define E1_DIAG_PIN                         PE7  // E1- endstop
 
 #define Z2_ENABLE_PIN E1_ENABLE_PIN
 #define Z2_STEP_PIN   E1_STEP_PIN
 #define Z2_DIR_PIN    E1_DIR_PIN
 
+// #define Z2_MIN E1_DIAG_PIN fixme
 
 //
 // Software SPI pins for TMC2130 stepper drivers
@@ -67,3 +68,7 @@
 #endif
 
 #include "pins_MKS_ROBIN_NANO_V3_common.h"
+
+#undef Z_MAX_PIN
+// Z2_USE_ENDSTOP is ZMAX
+#define Z_MAX_PIN                    E1_DIAG_PIN
