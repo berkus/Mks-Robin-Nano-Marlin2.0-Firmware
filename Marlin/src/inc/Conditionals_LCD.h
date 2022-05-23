@@ -540,6 +540,14 @@
   #define HAS_LCD_MENU 1
 #endif
 
+// #if ENABLED(MKS_TS35_V2_0)
+//   #define HAS_DISPLAY 1
+//   // #define HAS_STATUS_MESSAGE 1
+//   #define HAS_LCD_MENU 1
+//   #define HAS_WIRED_LCD 1
+//   #define HAS_SHIFT_ENCODER 0
+// #endif
+
 #if HAS_MARLINUI_U8GLIB
   #ifndef LCD_PIXEL_WIDTH
     #define LCD_PIXEL_WIDTH 128
